@@ -20,7 +20,7 @@ export default function Profile() {
       axios({
         method: "GET",
         withCredentials: true,
-        url: "http://localhost:3001/profile",
+        url: "https://chitter-twitterclone.herokuapp.com/profile",
       }).then((res) => {
         console.log(res.data);
         setData(res.data);
@@ -29,7 +29,7 @@ export default function Profile() {
       axios({
         method: "GET",
         withCredentials: true,
-        url: "http://localhost:3001/profile/" + userId,
+        url: "https://chitter-twitterclone.herokuapp.com/profile/" + userId,
       }).then((res) => {
         setData(res.data);
         // console.log(data.bioPhotoId);
@@ -40,7 +40,7 @@ export default function Profile() {
   const getTweets = async () => {
     try {
       await axios
-        .get("http://localhost:3001/users/" + userId + "/tweets/")
+        .get("https://chitter-twitterclone.herokuapp.com/users/" + userId + "/tweets/")
         .then((response) => {
           setTweets(response.data);
         });

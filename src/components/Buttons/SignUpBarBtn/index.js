@@ -5,7 +5,7 @@ import Axios from "axios";
 export default function SignUpBarBtn(props) {
 
   const logOut = () => {
-    Axios.get("http://localhost:3001/logout", {
+    Axios.get("https://chitter-twitterclone.herokuapp.com/logout", {
       withCredentials: true,
     }).then((res) => {
       if (res.data === "Logged Out") {

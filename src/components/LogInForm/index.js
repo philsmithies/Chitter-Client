@@ -22,7 +22,7 @@ export default function LogInForm() {
         password: loginPassword,
       },
       withCredentials: true,
-      url: "http://localhost:3001/login",
+      url: "https://chitter-twitterclone.herokuapp.com/login",
     }).then((res) => {
       if (res.data.auth) {
         setUser(res.data.user.username)

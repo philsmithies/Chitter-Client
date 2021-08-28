@@ -58,7 +58,7 @@ export default function EditModal(props) {
   const updateProfile = async (photoId) => {
     try {
       await Axios.post(
-        "http://localhost:3001/users/" + user + "/update/",
+        "https://chitter-twitterclone.herokuapp.com/users/" + user + "/update/",
         {
           bio: bio,
           fullName: fullName,

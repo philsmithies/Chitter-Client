@@ -13,7 +13,7 @@ const UserContextProvider = (props) => {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:3001/user",
+      url: "https://chitter-twitterclone.herokuapp.com/user",
     }).then((res) => {
       setData(res.data);
       setDataIsLoading(false)

@@ -57,7 +57,7 @@ export default function SignUpForm() {
     const imageUrl = res.data.secure_url;
     try {
       await Axios.post(
-        "http://localhost:3001/signup",
+        "https://chitter-twitterclone.herokuapp.com/signup",
         {
           username: usernameReg,
           fullName: fullNameReg,
@@ -91,7 +91,7 @@ export default function SignUpForm() {
   const registerNoPhoto = async () => {
     try {
       await Axios.post(
-        "http://localhost:3001/signup",
+        "https://chitter-twitterclone.herokuapp.com/signup",
         {
           username: usernameReg,
           fullName: fullNameReg,

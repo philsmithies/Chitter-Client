@@ -8,7 +8,7 @@ export default function Feed() {
   const [allData, setAllData] = useState([]);
 
   const getTweets = () => {
-    axios("http://localhost:3001/tweets")
+    axios("https://chitter-twitterclone.herokuapp.com/tweets")
       .then((response) => {
         setAllData(response.data);
       })

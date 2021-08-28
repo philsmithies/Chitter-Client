@@ -70,7 +70,7 @@ export default function TweetModal(props) {
   const postTweet = async (publicId) => {
     try {
       await Axios.post(
-        "http://localhost:3001/new",
+        "https://chitter-twitterclone.herokuapp.com/new",
         {
           text: tweet,
           author: data,
