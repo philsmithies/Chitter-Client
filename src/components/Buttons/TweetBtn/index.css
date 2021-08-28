@@ -1,0 +1,25 @@
+.tweetBtn{
+height: 2.5rem; 
+border: none;
+background-color: lightblue;
+transition: all .1s linear;
+display: flex;
+border-radius: 100px;
+color: white;
+font-weight: 700;
+}
+
+.tweetLink {
+  text-decoration: none;
+}
+
+.tweetBtn p {
+  margin: 0 auto;
+  align-self: center;
+}
+
+.tweetBtn:hover {
+  background-color: rgb(210, 226, 232);
+  border-radius: 100px;
+  box-sizing: border box;
+}

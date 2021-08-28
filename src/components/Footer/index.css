@@ -1,0 +1,14 @@
+footer {
+  background-color: #8ad6eb;
+  position: absolute;
+  color: white;
+  left: 0;
+  bottom: 0;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

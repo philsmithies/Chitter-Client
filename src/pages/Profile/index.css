@@ -1,0 +1,37 @@
+.profile_grid {
+  width: 95vw;
+  display: grid;
+  grid-template-columns: 1fr 600px 1fr;
+  margin-bottom: 8em;
+}
+
+.profile_wrapper {
+  max-width: 600px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  /* margin-top: 1em;   */
+}
+
+.bannerimg {
+  grid-column: 2 / 3;
+  object-fit: cover;
+  overflow: hidden;
+  height: 18rem;
+}
+
+.profile_content {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  color: white;
+  border-bottom: lightgray solid 1px;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.signupbar {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}

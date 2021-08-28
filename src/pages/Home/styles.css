@@ -1,0 +1,43 @@
+.main_grid {
+  width: 95vw;
+  display: grid;
+  grid-template-columns: 1fr 600px 1fr;
+  margin-bottom: 100px;
+}
+
+.main_content {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  color: white;
+  /* margin-top: 1em; */
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.signupbar {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.project_text {
+  font-size: 0.95em;
+  color: darkgray;
+  font-weight: 700;
+  margin: 2rem;
+}
+
+.name_text {
+  font-size: 0.95em;
+  color: rgb(130, 118, 208);
+  font-weight: 700;
+}
+
+.name_text {
+  text-decoration: none;
+}
+.name_text:hover {
+  color: black;
+}

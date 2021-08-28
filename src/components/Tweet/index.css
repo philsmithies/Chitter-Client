@@ -1,0 +1,122 @@
+.tweet_wrapper {
+  color: black;
+  padding-top: 0.9em;
+  padding-left: 0.9em;
+  display: flex;
+  border-top: lightgray solid 1px;
+  border-left: lightgray solid 1px;
+  border-right: lightgray solid 1px;
+  transition: all 0.1s linear;
+}
+
+.tweet_wrapper:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.profile_photo {
+  background-color: white;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-left: 0.25em;
+}
+
+.profile_photo img {
+  max-width: 48px;
+  max-height: 48px;
+  border-radius: 50%;
+}
+
+.tweet_content {
+  display: flex;
+  margin-left: 0.25em;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding-left: 0.75em;
+}
+
+.username {
+  width: 97%;
+  display: flex;
+}
+
+.threeDots {
+  color: grey;
+}
+
+.usernameText {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+
+  color: lightslategray;
+}
+
+.profileLinks {
+  text-decoration: none;
+  color: black;
+}
+
+.profileLinks:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.dateText {
+  margin: 0 0.25em;
+  color: black;
+  justify-self: flex-start;
+}
+
+.tweet_content div {
+  margin-bottom: 0.25em;
+}
+
+.bodyText {
+  color: rgb(45, 45, 45);
+  margin-bottom: 1em;
+}
+
+.tweet_functions {
+  display: flex;
+  margin: 0.25em 0;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.tweet_functions svg {
+  height: 20px;
+  border-radius: 50%;
+  padding: 0.3em;
+  color: grey;
+  transition: all 0.1s linear;
+}
+
+.tweet_functions .chatBubble:hover {
+  color: rgb(100, 159, 196);
+  background-color: lightskyblue;
+}
+
+.tweet_functions .retweet:hover {
+  color: rgb(109, 84, 145);
+  background-color: rgb(179, 163, 201);
+}
+
+.tweet_functions .heart:hover {
+  color: rgb(155, 19, 19);
+  background-color: rgb(249, 0, 0);
+}
+
+.tweet_functions .link:hover {
+  color: rgb(100, 159, 196);
+  background-color: lightskyblue;
+}
+
+.tweet_photo{
+  margin-top: .4em;
+  max-height: 280px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}

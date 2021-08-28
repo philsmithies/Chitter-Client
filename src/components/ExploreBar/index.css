@@ -1,0 +1,32 @@
+.birdLogo {
+  max-width: 30px;
+  padding: 0 0.75em;
+  transition: all 0.1s linear;
+  float: left;
+}
+
+.birdLogo:hover {
+  background-color: lightblue;
+  border-radius: 100px;
+  box-sizing: border box;
+}
+
+.hashtag {
+  max-width: 18px;
+  justify-self: center;
+  align-self: center;
+}
+
+.menuItem {
+  font-size: 1.5em;
+  float: left;
+  margin-left: 0.8rem;
+  color: black;
+}
+
+.explore_wrapper {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em auto;
+}
