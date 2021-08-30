@@ -37,22 +37,23 @@ export default function Profile() {
     }
   };
 
-  const getTweets = async () => {
-    try {
-      await axios
-        .get("https://chitter-twitterclone.herokuapp.com/users/" + userId + "/tweets/")
-        .then((response) => {
-          setTweets(response.data);
-        });
-    } catch (err) {
-      console.error(err);
-    }
-  };
+
 
   useEffect(() => {
+    const getTweets = async () => {
+      try {
+        await axios
+          .get("https://chitter-twitterclone.herokuapp.com/users/" + userId + "/tweets/")
+          .then((response) => {
+            setTweets(response.data);
+          });
+      } catch (err) {
+        console.error(err);
+      }
+    };
     getProfileData(userId);
-    getTweets();
-  }, []);
+    getTweets()
+  }, [userId]);
 
   const EditButton = () => {
       if (userId) {
