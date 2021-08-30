@@ -3,6 +3,7 @@ import { TextField } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import Axios from "axios";
 import { makeStyles } from "@material-ui/core/styles";
+import { useHistory } from "react-router-dom";
 import "./index.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -16,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignUpForm() {
+export default function 
+SignUpForm() {
   const classes = useStyles();
 
   const url = "https://api.cloudinary.com/v1_1/dryaxqxie/image/upload";
@@ -50,7 +52,7 @@ export default function SignUpForm() {
   };
 
   const register = async () => {
-    
+    const history = useHistory();
     const formData = new FormData();
     formData.append("file", image);
     formData.append("upload_preset", preset);
@@ -72,7 +74,7 @@ export default function SignUpForm() {
       ).then((response) => {
         console.log(response);
         if (response.data === "User Created") {
-          window.location.href = "/login";
+          history.push("/login");
         } else if (response.data !== "User Created") {
           setErrorMsg(
             "User already exists, please sign in or create new account"
