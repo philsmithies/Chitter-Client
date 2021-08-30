@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export default function 
 SignUpForm() {
   const classes = useStyles();
-
+  const history = useHistory();
   const url = "https://api.cloudinary.com/v1_1/dryaxqxie/image/upload";
   const preset = "chitter";
   const [passwordMsg, setPasswordMsg] = useState("");
@@ -52,7 +52,6 @@ SignUpForm() {
   };
 
   const register = async () => {
-    const history = useHistory();
     const formData = new FormData();
     formData.append("file", image);
     formData.append("upload_preset", preset);
